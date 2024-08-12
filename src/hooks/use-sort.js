@@ -5,7 +5,7 @@ function useSort(data, config) {
     const [sortBy, setSortBy] = useState(null);
     
     const setSortColumn = (label) => {
-        if (sortBy&&label!=sortBy) {
+        if (sortBy&&label !== sortBy) {
             setSortOrder('asc');
             setSortBy(label);
             return;
